@@ -6,4 +6,6 @@ Inline-style:
 Reference-style: 
 ![alt text][logo]
 
-[logo]: https://i.imgur.com/0hSTC2g.jpg
+[logo]: https://i.imgur.com/9F9F6R7.png
+
+
