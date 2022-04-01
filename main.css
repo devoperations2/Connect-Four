@@ -11,3 +11,11 @@ flex-wrap: wrap
 
 
 }
+
+#gameboard {
+dispay: grid;
+background-color: blue;
+
+
+
+}
