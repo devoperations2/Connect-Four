@@ -6,12 +6,7 @@ html {
     -moz-background-size: cover;
     min-height: 100%;
     
-     
-
 }
-
-
-
 
 h1 {
 
@@ -19,10 +14,9 @@ text-align: center;
 font-family: 'BioRhyme Expanded', serif;
 background-color: aqua;
 
-
 }
 
-.gameboard {
+#gameboard {
     display: grid;
     margin: 0 auto;
     justify-content: center;
@@ -31,29 +25,22 @@ background-color: aqua;
     height: 610px;
     grid-template-columns: repeat(7, 100px);
     grid-template-rows: repeat(6, 100px);
-    
-    
-    
-    
+          
 }
-
-
-
 
 body{
 
-
 }
 
-.board {
+#board {
     border-radius: 50%;
     background-color: rgb(212, 37, 37);
     border: 5px solid black;
     outline: 10px whitesmoke;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     align-content: center;
 }
-.board:hover {
+#board:hover {
     background-color: rgb(94, 243, 213);
     
 
@@ -67,5 +54,6 @@ section {
 
 button {
        text-align: center;
+       margin: auto 
 
-}
+    }
