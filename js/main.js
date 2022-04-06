@@ -52,7 +52,7 @@ const COLORS = {
   // hide/show the markers (hide if no 0's exist in that column)
   function renderMarkers() {
     markerEls.forEach(function(markerEl, colIdx) {
-      markerEl.style.visibility = board[colIdx].includes(0) ? 'visible' : 'hidden';
+      markerEl.style.visibility = gameBoard[colIdx].includes(0) ? 'visible' : 'hidden';
     });
   }
   
@@ -60,7 +60,7 @@ const COLORS = {
   function handleDrop(evt) {
     const colIdx = markerEls.indexOf(evt.target);
     if (colIdx === -1) return;
-    const colArr = board[colIdx];
+    const colArr = gameBoard[colIdx];
     const rowIdx = colArr.indexOf(0);
     colArr[rowIdx] = turn;
     turn *= -1;

@@ -1,5 +1,5 @@
 * {
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
   }
 
 
@@ -16,12 +16,19 @@ html {
 h1 {
 
 text-align: center;
-font-family: 'BioRhyme Expanded', serif;
-background-color: rgb(166, 220, 232);
-border-radius: 20%;
-font-size: 80px;
+font-family: font-family: 'BioRhyme Expanded', serif;
+letter-spacing: 5px;
+border-radius: 40%;
+font-size: 150px;
+color: purple;
 
-
+-webkit-text-fill-color: blue;
+-webkit-text-stroke-width: 4px;
+-webkit-text-stroke-color: white;
+web 
+position: absolute;
+background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); 
+background-size: 200px; 
 
 }
 body {
@@ -50,6 +57,7 @@ body {
     border-radius: 50%;
     border:  solid blue;
 
+
 }
 #gameBoard > div:hover {
     background-color: rgb(94, 243, 213);
@@ -59,28 +67,27 @@ button {
        text-align: center;
        padding: 10px;
        font-size: 20px;
-       width:    
        background-color: pink;
        font-family: 'BioRhyme Expanded', serif;
     }
 
-    /* #markers { */
-        /* display: grid;
-        grid-template-columns: repeat(5, 16vmin);
+    #markers {
+        display: grid;
+        grid-template-columns: repeat(7, 8vmin);
         gap: 2vmin;
         margin-top: 2vmin;
         justify content: center;
-      } */
+      } 
       
-      /* #markers > div {
-        height: 16vmin;
+      #markers > div { 
+        height: 8vmin;
         border-width: 8vmin;
         border-style: solid;
-        border-color: lightgray transparent transparent;
+        border-color: rgb(0, 25, 124) transparent transparent;
         transform: scale(0.7);
       }
       
       #markers > div:hover {
         transform: scale(0.9);
         transition: transform 150ms ease-in;
-        border-top-color: darkgray; */
+        border-top-color: rgb(0, 72, 255);
