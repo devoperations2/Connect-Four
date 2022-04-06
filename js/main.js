@@ -9,7 +9,7 @@ const COLORS = {
   };
   
   /*----- app's state (variables) -----*/
-  let board;  // 2D Array where the nested arrays rep the columns
+  let gameBoard;  // 2D Array where the nested arrays rep the columns
   let turn;  // 1 or -1; 0 for nobody home in that cell
   
   /*----- cached element references -----*/
@@ -23,12 +23,16 @@ const COLORS = {
   
   // initialize state, then call render()
   function init() {
-    board = [
-      [0, 0, 0, 0],  // column 0
-      [0, 0, 0, 0],  // column 1
-      [1, 1, 1, 0],  // column 2
-      [0, 0, 0, 0],  // column 3
-      [0, 0, 0, 0],  // column 4
+    gameBoard = [
+      [0, 0, 0, 0, 0, 0],  // column 0
+      [0, 0, 0, 0, 0, 0],  // column 1
+      [1, 1, 1, 0, 0, 0],  // column 2
+      [0, 0, 0, 0, 0, 0],  // column 3
+      [0, 0, 0, 0, 0, 0],  // column 4
+      [0, 0, 0, 0, 0, 0],  // column 5
+      [0, 0, 0, 0, 0, 0],  // column 6
+      [0, 0, 0, 0, 0, 0]   // column 7
+
     ];
     turn = 1;
     render();
@@ -36,7 +40,7 @@ const COLORS = {
   
   function render() {
     // Iterate over the column arrays
-    board.forEach(function(colArr, colIdx) {
+    gameBoard.forEach(function(colArr, colIdx) {
       colArr.forEach(function(cellVal, rowIdx) {
         const cellEl = document.getElementById(`c${colIdx}r${rowIdx}`);
         cellEl.style.backgroundColor = COLORS[cellVal];

@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+  }
+
+
 html {
     background-image: url("https://cdn.onebauer.media/one/empire-tmdb/films/7453/images/lALaxxUVJoZMeRcW3HfvG7QoDua.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill");
     background-size: cover;
@@ -16,7 +21,7 @@ background-color: aqua;
 
 }
 
-#gameboard {
+#gameBoard {
     display: grid;
     margin: 0 auto;
     justify-content: center;
@@ -25,7 +30,12 @@ background-color: aqua;
     height: 610px;
     grid-template-columns: repeat(7, 100px);
     grid-template-rows: repeat(6, 100px);
-          
+    border-radius: 50%;
+    background-color: rgb(212, 37, 37);
+    border: 5px solid black;
+    outline: 10px whitesmoke;
+    
+    align-content: center;      
 }
 
 body{
@@ -33,14 +43,15 @@ body{
 }
 
 #board {
-    border-radius: 50%;
-    background-color: rgb(212, 37, 37);
-    border: 5px solid black;
-    outline: 10px whitesmoke;
-    /* box-sizing: border-box; */
-    align-content: center;
+        #board > div {
+        border-radius: 50%;
+        border: 0.1vmin solid grey;
+   
 }
-#board:hover {
+
+
+
+#gameBoard:hover {
     background-color: rgb(94, 243, 213);
     
 
@@ -57,3 +68,23 @@ button {
        margin: auto 
 
     }
+    #markers {
+        display: grid;
+        grid-template-columns: repeat(5, 16vmin);
+        gap: 2vmin;
+        margin-top: 2vmin;
+        justify content: center;
+      }
+      
+      #markers > div {
+        height: 16vmin;
+        border-width: 8vmin;
+        border-style: solid;
+        border-color: lightgray transparent transparent;
+        transform: scale(0.7);
+      }
+      
+      #markers > div:hover {
+        transform: scale(0.9);
+        transition: transform 150ms ease-in;
+        border-top-color: darkgray;
