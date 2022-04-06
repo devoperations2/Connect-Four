@@ -31,7 +31,7 @@ const COLORS = {
       [0, 0, 0, 0, 0, 0],  // column 4
       [0, 0, 0, 0, 0, 0],  // column 5
       [0, 0, 0, 0, 0, 0],  // column 6
-      [0, 0, 0, 0, 0, 0]   // column 7
+      
 
     ];
     turn = 1;
@@ -69,58 +69,58 @@ const COLORS = {
 
 
   
-  // winning logic
-  function winner(idx, row) {
-    let checkIdx = idx;
-    let theRow = 0;
-    while (gameBoard[checkIdx] === turn && checkIdx < gameBoard.length) {
-        theRow++; 
-        checkIdx = checkIdx + inc;
-    }
+// winning logic
+//   function winner(idx, row) {
+//     let checkIdx = idx;
+//     let theRow = 0;
+//     while (gameBoard[checkIdx] === turn && checkIdx < gameBoard.length) {
+//         theRow++; 
+//         checkIdx = checkIdx + inc;
+//     }
 
-    checkIdx = idx - inc;
+//     checkIdx = idx - inc;
 
-    while (gameBoard[checkIdx] === turn && checkIdx >= 0) {
-        theRow++; 
-        checkIdx = checkIdx - inc;
+//     while (gameBoard[checkIdx] === turn && checkIdx >= 0) {
+//         theRow++; 
+//         checkIdx = checkIdx - inc;
     
 
-    }
-    if (theRow >= 4) {
-        result = turn;
-    }
-};
+//     }
+//     if (theRow >= 4) {
+//         result = turn;
+//     }
+// };
 
 
 
-  function render() {
-    markerEls.forEach(function(markerEl, idx) {
-      circleEl.style.backgroundColor = gameBoard[idx];
-    });
+//   function render() {
+//     markerEls.forEach(function(markerEl, idx) {
+//       circleEl.style.backgroundColor = gameBoard[idx];
+//     });
 
-   if (result) {msgEl.innerText = `${result} WINS!`;}
-   else {
-       msgEl.innerText = '';
-   }
-  };
+//    if (result) {msgEl.innerText = `${result} WINS!`;}
+//    else {
+//        msgEl.innerText = '';
+//    }
+//   };
 
   
-  function handlePlayerTurn(evt) {
-    const idx = parseInt(evt.target.id)
-    if (gameBoard[idx] || result) {
-         return;
-} else{
-    gameBoard[idx] = turn;
-    winner(idx, 1);
-    winner(idx, 4);
-    winner(idx, 5);
-    winner(idx, 6);
-    winner(idx, 7);
-    turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
+//   function handlePlayerTurn(evt) {
+//     const idx = parseInt(evt.target.id)
+//     if (gameBoard[idx] || result) {
+//          return;
+// } else{
+//     gameBoard[idx] = turn;
+//     winner(idx, 1);
+//     winner(idx, 4);
+//     winner(idx, 5);
+//     winner(idx, 6);
+//     winner(idx, 7);
+//     turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
 
-    render();
-}
-const msgEl = document.querySelector('h3');
+//     render();
+// }
+// const msgEl = document.querySelector('h3');
 
 
 
