@@ -15,7 +15,7 @@ html {
 
 h1 {
 text-align: center;
-font-family: font-family: 'BioRhyme Expanded', serif;
+font-family: 'BioRhyme Expanded', serif;
 letter-spacing: 5px;
 border-radius: 40%;
 font-size: 150px;
@@ -23,8 +23,6 @@ color: purple;
 -webkit-text-fill-color: blue;
 -webkit-text-stroke-width: 4px;
 -webkit-text-stroke-color: white;
-web 
-position: absolute;
 background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); 
 background-size: 200px; 
 
@@ -36,6 +34,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 #gameBoard {
@@ -48,7 +47,9 @@ body {
     grid-template-rows: repeat(6, 100px);
     background-color: rgb(251, 255, 0);
     border: 5px solid black;
-    align-content: center;      
+    align-content: center;   
+    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+    
 }
 #gameBoard > div {
     border-radius: 50%;
@@ -66,6 +67,11 @@ button {
        font-size: 20px;
        background-color: pink;
        font-family: 'BioRhyme Expanded', serif;
+       background-image: url("https://silodrome.com/wp-content/uploads/2013/06/Dont-Panic-.jpg");
+       background-size: cover;
+       contain:content 
+     
+       
     }
 
     #markers {
@@ -73,7 +79,7 @@ button {
         grid-template-columns: repeat(7, 8vmin);
         gap: 2vmin;
         margin-top: 2vmin;
-        justify content: center;
+        justify-content: center;
       } 
       
       #markers > div { 
