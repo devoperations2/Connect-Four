@@ -20,6 +20,14 @@ font-family: 'BioRhyme Expanded', serif;
 background-color: aqua;
 
 }
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 #gameBoard {
     display: grid;
@@ -34,22 +42,19 @@ background-color: aqua;
     background-color: rgb(212, 37, 37);
     border: 5px solid black;
     outline: 10px whitesmoke;
-    
     align-content: center;      
 }
-
-body{
+#gameBoard > div {
+    border-radius: 50%;
+    border: 0.1vmin solid blue;
 
 }
 
-#board {
-        #board > div {
+#gameBoard > div {
         border-radius: 50%;
-        border: 0.1vmin solid grey;
+        border: 0.1vmin solid rgb(255, 0, 0);
    
 }
-
-
 
 #gameBoard:hover {
     background-color: rgb(94, 243, 213);
@@ -57,11 +62,7 @@ body{
 
 
 }
-section {
 
-
-
-}
 
 button {
        text-align: center;
