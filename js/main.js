@@ -11,6 +11,7 @@ const COLORS = {
   /*----- app's state (variables) -----*/
   let gameBoard;  // 2D Array where the nested arrays rep the columns
   let turn;  // 1 or -1; 0 for nobody home in that cell
+  let winner;
   
   /*----- cached element references -----*/
   const markerEls = [...document.querySelectorAll('#markers > div')];
@@ -46,7 +47,7 @@ const COLORS = {
         cellEl.style.backgroundColor = COLORS[cellVal];
       });
     });
-    renderMarkers();
+    renderMarkers(); checkWin();
   }
   
   // hide/show the markers (hide if no 0's exist in that column)
@@ -70,19 +71,40 @@ const COLORS = {
 
   
 // winning logic
-//   function winner(idx, row) {
-//     let checkIdx = idx;
-//     let theRow = 0;
-//     while (gameBoard[checkIdx] === turn && checkIdx < gameBoard.length) {
-//         theRow++; 
-//         checkIdx = checkIdx + inc;
-//     }
+function checkWin()  {
+for(let i=0; i < gameBoard.length; i++){
+  for(let j=0; j < gameBoard[i].length; j++) {
+    if(gameBoard[i][j] === turn && gameBoard[i][j+1] === turn && gameBoard[i][j+2] && gameBoard[i][j+3]){
+      winner = true
+    }
 
-//     checkIdx = idx - inc;
+  } 
+}
 
-//     while (gameBoard[checkIdx] === turn && checkIdx >= 0) {
-//         theRow++; 
-//         checkIdx = checkIdx - inc;
+}  
+
+
+
+
+
+
+
+
+
+
+// function checkWin(idx, row) {
+  //   let checkIdx = idx;
+  //   let theRow = 0;
+  //   while (gameBoard[checkIdx] === turn && checkIdx < gameBoard.length) {
+  //       theRow++; 
+  //       checkIdx = checkIdx + inc;
+  //   }
+
+  //   checkIdx = idx - inc;
+
+  //   while (gameBoard[checkIdx] === turn && checkIdx >= 0) {
+  //       theRow++; 
+  //       checkIdx = checkIdx - inc;
     
 
 //     }
