@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
 
 
@@ -19,6 +19,7 @@ text-align: center;
 font-family: 'BioRhyme Expanded', serif;
 background-color: aqua;
 
+
 }
 body {
     height: 100vh;
@@ -33,51 +34,41 @@ body {
     display: grid;
     margin: 0 auto;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     width:  750px;
-    height: 610px;
+    height: 800px;
     grid-template-columns: repeat(7, 100px);
     grid-template-rows: repeat(6, 100px);
-    border-radius: 50%;
     background-color: rgb(212, 37, 37);
     border: 5px solid black;
-    outline: 10px whitesmoke;
     align-content: center;      
 }
 #gameBoard > div {
     border-radius: 50%;
-    border: 0.1vmin solid blue;
+    border:  solid blue;
 
 }
-
-#gameBoard > div {
-        border-radius: 50%;
-        border: 0.1vmin solid rgb(255, 0, 0);
-   
-}
-
-#gameBoard:hover {
+#gameBoard > div:hover {
     background-color: rgb(94, 243, 213);
-    
-
-
+ 
 }
-
-
 button {
        text-align: center;
-       margin: auto 
-
+       padding: 10px;
+       font-size: 20px;
+       width:    
+       background-color: purple;
+       font-family: 'BioRhyme Expanded', serif;
     }
-    #markers {
-        display: grid;
+    /* #markers { */
+        /* display: grid;
         grid-template-columns: repeat(5, 16vmin);
         gap: 2vmin;
         margin-top: 2vmin;
         justify content: center;
-      }
+      } */
       
-      #markers > div {
+      /* #markers > div {
         height: 16vmin;
         border-width: 8vmin;
         border-style: solid;
@@ -88,4 +79,4 @@ button {
       #markers > div:hover {
         transform: scale(0.9);
         transition: transform 150ms ease-in;
-        border-top-color: darkgray;
+        border-top-color: darkgray; */
