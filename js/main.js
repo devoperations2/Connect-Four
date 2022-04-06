@@ -4,8 +4,8 @@
 /*----- constants -----*/
 const COLORS = {
     '0': 'white',
-    '1': 'purple',
-    '-1': 'orange'
+    '1': 'black',
+    '-1': 'red'
   };
   
   /*----- app's state (variables) -----*/
@@ -26,7 +26,7 @@ const COLORS = {
     gameBoard = [
       [0, 0, 0, 0, 0, 0],  // column 0
       [0, 0, 0, 0, 0, 0],  // column 1
-      [1, 1, 1, 0, 0, 0],  // column 2
+      [0, 0, 0, 0, 0, 0],  // column 2
       [0, 0, 0, 0, 0, 0],  // column 3
       [0, 0, 0, 0, 0, 0],  // column 4
       [0, 0, 0, 0, 0, 0],  // column 5

@@ -14,14 +14,12 @@ html {
 }
 
 h1 {
-
 text-align: center;
 font-family: font-family: 'BioRhyme Expanded', serif;
 letter-spacing: 5px;
 border-radius: 40%;
 font-size: 150px;
 color: purple;
-
 -webkit-text-fill-color: blue;
 -webkit-text-stroke-width: 4px;
 -webkit-text-stroke-color: white;
@@ -44,12 +42,11 @@ body {
     display: grid;
     margin: 0 auto;
     justify-content: center;
-    background-color: rgb(255, 0, 0);
     width:  750px;
     height: 800px;
     grid-template-columns: repeat(7, 100px);
     grid-template-rows: repeat(6, 100px);
-    background-color: rgb(212, 37, 37);
+    background-color: rgb(251, 255, 0);
     border: 5px solid black;
     align-content: center;      
 }
