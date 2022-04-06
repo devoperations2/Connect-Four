@@ -17,7 +17,10 @@ h1 {
 
 text-align: center;
 font-family: 'BioRhyme Expanded', serif;
-background-color: aqua;
+background-color: rgb(166, 220, 232);
+border-radius: 20%;
+font-size: 80px;
+
 
 
 }
@@ -57,9 +60,10 @@ button {
        padding: 10px;
        font-size: 20px;
        width:    
-       background-color: purple;
+       background-color: pink;
        font-family: 'BioRhyme Expanded', serif;
     }
+
     /* #markers { */
         /* display: grid;
         grid-template-columns: repeat(5, 16vmin);
