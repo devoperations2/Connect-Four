@@ -5,7 +5,7 @@
 const COLORS = {
     '0': 'white',
     '1': 'black',
-    '-1': 'orange'
+    '-1': 'red'
   };
   
   /*----- app's state (variables) -----*/
@@ -67,7 +67,7 @@ const COLORS = {
     render(); 
     checkWin();
     turn *= -1;
-      
+     
   }
   
   function checkWin() {
@@ -77,16 +77,22 @@ const COLORS = {
           winner = true
         } else if(gameBoard[i][j] === turn && gameBoard[i+1][j] === turn && gameBoard[i+2][j] === turn && gameBoard[i+3][j]){
           winner = true
-        }else if(gameBoard[i][j] === turn && gameBoard[i+1][j+1] === turn && gameBoard[i+2][j+2] === turn && gameBoard[i+3][j+3]){
+        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j+1] === turn && gameBoard[i+2][j+2] === turn && gameBoard[i+3][j+3]){
           winner = true
-        }else if(gameBoard[i][j] === turn && gameBoard[i+1][j-1] === turn && gameBoard[i+2][j-2] === turn && gameBoard[i+3][j-3]){
+        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j-1] === turn && gameBoard[i+2][j-2] === turn && gameBoard[i+3][j-3]){
           winner = true
       }
     }
   }
   };
 
-  
+function showWinner() {
+ if(checkWin = COLORS.red)
+return = true;
+
+else(checkWin = COLORS.black)
+
+}  
 
 
 
