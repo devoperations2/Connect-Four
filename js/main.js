@@ -5,7 +5,7 @@
 const COLORS = {
     '0': 'white',
     '1': 'black',
-    '-1': 'red'
+    '-1': 'orange'
   };
   
   /*----- app's state (variables) -----*/
@@ -47,7 +47,7 @@ const COLORS = {
         cellEl.style.backgroundColor = COLORS[cellVal];
       });
     });
-    renderMarkers(); checkWin();
+    renderMarkers(); 
   }
   
   // hide/show the markers (hide if no 0's exist in that column)
@@ -64,111 +64,64 @@ const COLORS = {
     const colArr = gameBoard[colIdx];
     const rowIdx = colArr.indexOf(0);
     colArr[rowIdx] = turn;
+    render(); 
+    checkWin();
     turn *= -1;
-    render();
+      
   }
-
-
   
-// winning logic
-function checkWin()  {
-for(let i=0; i < gameBoard.length; i++){
-  for(let j=0; j < gameBoard[i].length; j++) {
-    if(gameBoard[i][j] === turn && gameBoard[i][j+1] === turn && gameBoard[i][j+2] && gameBoard[i][j+3]){
-      winner = true
+  function checkWin() {
+    for(let i=0; i < gameBoard.length -4; i++){
+      for(let j=0; j < gameBoard[i].length -4; j++){
+        if(gameBoard[i] [j] === turn && gameBoard[i][j+1] === turn && gameBoard[i][j+2] && gameBoard[i][j+3]){
+          winner = true
+        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j] === turn && gameBoard[i+2][j] === turn && gameBoard[i+3][j]){
+          winner = true
+        }else if(gameBoard[i][j] === turn && gameBoard[i+1][j+1] === turn && gameBoard[i+2][j+2] === turn && gameBoard[i+3][j+3]){
+          winner = true
+        }else if(gameBoard[i][j] === turn && gameBoard[i+1][j-1] === turn && gameBoard[i+2][j-2] === turn && gameBoard[i+3][j-3]){
+          winner = true
+      }
     }
-
-  } 
-}
-
-}  
-
-
-
-
-
-
-
-
-
-
-// function checkWin(idx, row) {
-  //   let checkIdx = idx;
-  //   let theRow = 0;
-  //   while (gameBoard[checkIdx] === turn && checkIdx < gameBoard.length) {
-  //       theRow++; 
-  //       checkIdx = checkIdx + inc;
-  //   }
-
-  //   checkIdx = idx - inc;
-
-  //   while (gameBoard[checkIdx] === turn && checkIdx >= 0) {
-  //       theRow++; 
-  //       checkIdx = checkIdx - inc;
-    
-
-//     }
-//     if (theRow >= 4) {
-//         result = turn;
-//     }
-// };
-
-
-
-//   function render() {
-//     markerEls.forEach(function(markerEl, idx) {
-//       circleEl.style.backgroundColor = gameBoard[idx];
-//     });
-
-//    if (result) {msgEl.innerText = `${result} WINS!`;}
-//    else {
-//        msgEl.innerText = '';
-//    }
-//   };
+  }
+  };
 
   
-//   function handlePlayerTurn(evt) {
-//     const idx = parseInt(evt.target.id)
-//     if (gameBoard[idx] || result) {
-//          return;
-// } else{
-//     gameBoard[idx] = turn;
-//     winner(idx, 1);
-//     winner(idx, 4);
-//     winner(idx, 5);
-//     winner(idx, 6);
-//     winner(idx, 7);
-//     turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;}
-
-//     render();
-// }
-// const msgEl = document.querySelector('h3');
 
 
 
-// function handlePlayerTurn(evt) {
-//   const idx = parseInt(evt.target.id)
-  
-//   if (gameBoard[idx] || winner) return;
-//   gameBoard[idx] = turn;
-//   turn = (turn === PLAYER1) ? PLAYER2 : PLAYER1;
-  
-//   // winner = getWinner();
-  
-//   render();
 
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     
 
-// function render() {
-//   squareEls.forEach(function(squareEl, idx) {
+
+
+
+
+
+
+
     
-//   });
-//   if (winner === null) {
-//     msgEl.textContent = `It's ${turn}'s turn!`
-//   }
-// }
+
+
 
 
 
