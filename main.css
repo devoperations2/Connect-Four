@@ -27,8 +27,9 @@ color: purple;
 background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); 
 /* background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c); */
 /* background-size: 200px;  */
-
-
+}
+h2 {
+  font-size: 100px;
 }
 body {
     height: 100vh;
@@ -70,10 +71,10 @@ button {
        font-size: 20px;
        background-color: pink;
        font-family: 'BioRhyme Expanded', serif;
-       background-image: url("https://silodrome.com/wp-content/uploads/2013/06/Dont-Panic-.jpg");
+       
        background-size: cover;
        contain:content 
-       grid-column-start: 5; 
+       
        
     }
 
@@ -93,7 +94,7 @@ button {
         border-color: rgb(0, 25, 124) transparent transparent;
         transform: scale(0.7);
         background-image: url("https://silodrome.com/wp-content/uploads/2013/06/Dont-Panic-.jpg");
-        sc
+        
       }
       
       #markers > div:hover {

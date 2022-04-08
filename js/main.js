@@ -1,6 +1,3 @@
-
-
-
 /*----- constants -----*/
 const COLORS = {
     '0': 'white',
@@ -12,10 +9,14 @@ const COLORS = {
   let gameBoard;  // 2D Array where the nested arrays rep the columns
   let turn;  // 1 or -1; 0 for nobody home in that cell
   let winner;
+  let tieArray;
   
   /*----- cached element references -----*/
   const markerEls = [...document.querySelectorAll('#markers > div')];
-  
+  const messageEl = document.querySelector("h2")
+  const resetBtn = document.getElementById('reset')
+
+
   /*----- event listeners -----*/
   document.getElementById('markers').addEventListener('click', handleDrop);
   resetBtn.addEventListener('click', init);
@@ -57,6 +58,13 @@ const COLORS = {
     });
   }
   
+  function renderWinner() {
+    messageEl.innerHTML = `The winner is ${COLORS[turn]}!`;
+    resetBtn.style.visibility = 'visible';
+   
+
+  }
+  
   // Update all impacted state, then call render
   function handleDrop(evt) {
     const colIdx = markerEls.indexOf(evt.target);
@@ -65,75 +73,70 @@ const COLORS = {
     const rowIdx = colArr.indexOf(0);
     colArr[rowIdx] = turn;
     render(); 
-    checkWin();
+    getWinner(colIdx, rowIdx);
+    winner = getWinner(colIdx, rowIdx);
+    if(winner){
+    renderWinner();
+    }  
     turn *= -1;
      
   }
   
-  function checkWin() {
-    for(let i=0; i < gameBoard.length -4; i++){
-      for(let j=0; j < gameBoard[i].length -4; j++){
-        if(gameBoard[i] [j] === turn && gameBoard[i][j+1] === turn && gameBoard[i][j+2] && gameBoard[i][j+3]){
-          winner = true
-        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j] === turn && gameBoard[i+2][j] === turn && gameBoard[i+3][j]){
-          winner = true
-        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j+1] === turn && gameBoard[i+2][j+2] === turn && gameBoard[i+3][j+3]){
-          winner = true
-        } else if(gameBoard[i][j] === turn && gameBoard[i+1][j-1] === turn && gameBoard[i+2][j-2] === turn && gameBoard[i+3][j-3]){
-          winner = true
+
+  function getWinner(colIdx, rowIdx) {
+    return checkVertWin(colIdx, rowIdx)
+      || checkHorzWin(colIdx, rowIdx);
+  }  
+
+  function checkVertWin(colIdx, rowIdx) {
+      const player = gameBoard[colIdx][rowIdx];
+      
+      let count = 1;
+      //count up
+      let idx = rowIdx + 1; // initialize to one above
+      while (idx < gameBoard[colIdx].length && gameBoard[colIdx][idx] === player) {
+        count++;
+        idx++;
       }
+      idx = rowIdx - 1; // initialize to one above
+      while (idx >= 0 && gameBoard[colIdx][idx] === player) {
+        count++;
+        idx--;
+      }
+      return count === 4
+      
     }
-  }
-  };
 
-function showWinner() {
- if(checkWin = COLORS.red)
-return = true;
+    //opposite
+    function checkHorzWin(colIdx, rowIdx) {
+      const player = gameBoard[colIdx][rowIdx];
+      let count = 1;
+      //count right
+      let idx = colIdx + 1; // initialize to one above
+      while (idx < gameBoard.length && gameBoard[idx][rowIdx] === player) {
+        count++;
+        idx++;
+      }
+      idx = colIdx - 1; // initialize to one above
+      while (idx >= 0 && gameBoard[idx][rowIdx] === player) {
+        count++;
+        idx--;
+      }
+      return count >= 4 
+    }
+   
 
-else(checkWin = COLORS.black)
-
-}  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    function tieCheck() {
+ 
+      if (tieArray.length === 42) {
+          reset.style.visibility = 'visible';
+          message.innerHTML = 'its a tie'
+      };
+    } 
+   
+   
 
 
-    
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-  
-  
   
   
   
