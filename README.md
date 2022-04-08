@@ -9,34 +9,80 @@ Reference-style:
 [logo]: https://i.imgur.com/9F9F6R7.png
 
 
-// Define required variables used to track the state of the game
-// define variables for game board, winner/loser, 
-// define game with 42 squares and circles  
-// player to be able to click a square
-// define logic that winning equals four of the same color 
-// player to be able to click replay button
 
 
- <a href="https://www.linkedin.com/in/christopher-hayes-59057b164/"><img src="https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=LinkedIn"></a>
+
+ 
 
 
 <div align="center">
-   <h1>:school_satchel: :school: MEET YOUR CLASSMATES :school: :school_satchel: </h1>
-   <h3>https://meetyourclassmates.herokuapp.com/</h3>
-   <h5>Teammate Name | Your Name | Teammate Name </h5>`                             
-   <a href="https://yourportfoliolink.com" target="_blank">
-      <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
+   <img src="https://wallpaperaccess.com/full/230556.jpg"/>
+   <h1> Connect Four</h1>
+   <h3><a href="">Play the Game!</a></h3>
+   <h5>Christopher Hayes</h5>                             
+   <a href="[github page]" target="_blank">
+      <img src=""/>
    </a>
-   <a href="https://www.linkedin.com/in/user/" target="_blank">
-      <img src="https://img.shields.io/badge/-linkedin.com/in/user-blue?style=flat&``logo=Linkedin&logoColor=white">
+   <a href="https://www.linkedin.com/in/christopher-hayes-59057b164/"><img src="https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=LinkedIn"></a>
    </a> 
-   <a href="mailto:user@gmail.com" target="_blank">
-      <img src="https://img.shields.io/badge/-user@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
-   </a>
-   <a href="https://medium.com/@user">
-      <img src="https://img.shields.io/badge/-medium.com/@user-black?style=flat&logo=medium">
+   <a href="" target="_blank">
+      <img src="">
    </a>
 </div>
 
-<h1>:pencil: Description</h1>
-<p>Meet Your Classmates is an Instagram-clone and hub where students can get to know and relate to their peers via completion of short 3-question mini-surveys. By learning about others' backgrounds, previous experiences, and interests, an atmosphere of community is created that is conducive to higher levels of learning and success.</p>
+<h1></h1>
+<p></p>
+
+<details>
+<summary> :art: Wireframes</summary>
+
+| Description | Screenshot |
+|------------ | ------------|
+| <h3 align="center">Game</h3> | <img src="" width="700"/> |
+</details>
+
+<details>
+<summary> :gear: Functionality</summary>
+
+| Description | Screenshot |
+|------------ | ------------|
+| <h3 align="center">Starting Gameboard/Naruto's Turn</h3> | <img src="https://i.imgur.com/a0CejnY.png" width="700"/> |
+| <h3 align="center">Reds Win</h3> | <img src="https://i.imgur.com/7Bzopsf.png" width="700"/> |
+| <h3 align="center">Blacks Win</h3> | <img src="https://i.imgur.com/sPCFb2N.png" width="700"/> |
+
+
+
+
+
+</details>
+
+## :computer: Technologies Used
+
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+
+<h2> :fire: Getting Started </h2>
+
+<h3> :calling: Instructions </h3>
+<details open>
+<summary>How to Play</summary>
+<ol>
+<li>Try to build a row of 4 (or more) checkers while keeping your opponent from doing the same.</li>
+<li>Horizontal, Vertical </li>
+</ol>
+</details>
+
+<details open>   
+<summary>Deployed Link (GitHub Pages)</summary>
+<p><a href="https://ajcairel.github.io/Konnect4/">DEPLOYED LINK</a></p>
+</details>
+
+## :fast_forward: Next Steps   
+
+### Upcoming Features
+
+- [ ] Mobile-friendly version
+- [ ] Highlight *only* the winning 4+ in a row
