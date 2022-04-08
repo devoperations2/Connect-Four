@@ -16,9 +16,9 @@ Reference-style:
 
 
 <div align="center">
-   <img src="https://wallpaperaccess.com/full/230556.jpg"/>
+   <img src=".jpg"/>
    <h1> Connect Four</h1>
-   <h3><a href="">Play the Game!</a></h3>
+   <h3><a href="https://devoperations2.github.io/Connect-Four/">Play the Game!</a></h3>
    <h5>Christopher Hayes</h5>                             
    <a href="[github page]" target="_blank">
       <img src=""/>
@@ -38,8 +38,8 @@ Reference-style:
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Game</h3> | <img src="https://i.imgur.com/FFaaCX5.png" width="700"/> |
-| <h3 align="center">Game</h3> | <img src="https://i.imgur.com/49Wzz0K.png" width="700"/> |
+| <h3 align="center">Game Wireframes</h3> | <img src="https://i.imgur.com/FFaaCX5.png" width="700"/> |
+| <h3 align="center">Game pseudocode</h3> | <img src="https://i.imgur.com/49Wzz0K.png" width="700"/> |
 </details>
 
 <details>
@@ -78,12 +78,14 @@ Reference-style:
 
 <details open>   
 <summary>Deployed Link (GitHub Pages)</summary>
-<p><a href="https://ajcairel.github.io/Konnect4/">DEPLOYED LINK</a></p>
+<p><a href="https://devoperations2.github.io/Connect-Four/">DEPLOYED LINK</a></p>
 </details>
 
 ## :fast_forward: Next Steps   
+update diagonal logic 
 
 ### Upcoming Features
 
+update CSS   
 - [ ] Mobile-friendly version
 - [ ] Highlight *only* the winning 4+ in a row
