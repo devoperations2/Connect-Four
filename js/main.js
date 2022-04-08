@@ -21,7 +21,8 @@ const COLORS = {
   document.getElementById('markers').addEventListener('click', handleDrop);
   resetBtn.addEventListener('click', init);
   /*----- functions -----*/
-  init();
+  init(); 
+
   
   // initialize state, then call render()
   function init() {
@@ -37,6 +38,7 @@ const COLORS = {
 
     ];
     turn = 1;
+    clearMsg();
     render();
   }
   
@@ -148,7 +150,11 @@ const COLORS = {
     }
     
     
-    
+    function clearMsg(){
+    messageEl.innerHTML="";
+
+
+    }
     
     
     
