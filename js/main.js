@@ -9,12 +9,12 @@ const COLORS = {
   let gameBoard;  // 2D Array where the nested arrays rep the columns
   let turn;  // 1 or -1; 0 for nobody home in that cell
   let winner;
-  let tieArray;
+  
   
   /*----- cached element references -----*/
   const markerEls = [...document.querySelectorAll('#markers > div')];
   const messageEl = document.querySelector("h2")
-  const resetBtn = document.getElementById('reset')
+ 
 
 
   /*----- event listeners -----*/
@@ -124,15 +124,74 @@ const COLORS = {
       }
       return count >= 4 
     }
+
+
+    function checkDiagRight(colIdx, rowIdx) {
+      const player = gameBoard[colIdx][rowIdx];
+      let count = 1;
+      //count right
+      let idx1 = colIdx - 1;
+      let idx2 = rowIdx + 1;
+      while (idx1 >= 0  && idx2 < gameBoard[0].length && gameBoard[idx1][idx2] === player) {
+        count++;
+        idx1--;
+        idx2++;
+      }
+      idx1 = colIdx + 1;
+      idx2 = rowIdx - 1
+      while (idx1 < gameBoard.length && idx2 >= 0 && gameBoard[idx1][idx2] === player) {
+        count++;
+        idx1++;
+        idx2--;
+      }
+      return count >= 4 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+    // function checkForwardSlash(colIdx, rowIdx) {
+    //   const player = gameBoard[colIdx][rowIdx];
+    //   let count = 1; 
+    //   //count right
+    //   let idx1 = colIdx - 1;// initialize to one above 
+    //   let idx2 = rowIdx + 1;
+    //   while (idx1 >= 0  && idx2 < gameBoard[0].length && gameBoard[idx1][idx2] === player) {
+    //     count++;
+    //     idx1--;
+    //     idx2++;
+    //   }
+    //   idx1 = colIdx + 1; // initialize to one above 
+    //   idx2 = rowIdx - 1
+    //   while (idx1 < gameBoard.length && idx2 >= 0 && gameBoard[idx1][idx2] === player) {
+    //     count++;
+    //     idx1++;
+    //     idx2--;
+    //   }
+    //   return count === 4 
+    // }
    
 
-    function tieCheck() {
- 
-      if (tieArray.length === 42) {
-          reset.style.visibility = 'visible';
-          message.innerHTML = 'its a tie'
-      };
-    } 
+    
    
    
 
