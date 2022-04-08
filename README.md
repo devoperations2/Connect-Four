@@ -1,22 +1,6 @@
-Here's our logo (hover to see the title text):
-
-Inline-style: 
-![alt text]https://i.imgur.com/0hSTC2g.jpg "Logo Title Text 1")
-
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://i.imgur.com/9F9F6R7.png
-
-
-
-
-
- 
-
 
 <div align="center">
-   <img src=".jpg"/>
+   <img src="https://i.imgur.com/JLDAqXv.jpg"/>
    <h1> Connect Four</h1>
    <h3><a href="https://devoperations2.github.io/Connect-Four/">Play the Game!</a></h3>
    <h5>Christopher Hayes</h5>                             
@@ -85,7 +69,7 @@ Reference-style:
 update diagonal logic 
 
 ### Upcoming Features
-
+add music
 update CSS   
 - [ ] Mobile-friendly version
 - [ ] Highlight *only* the winning 4+ in a row
