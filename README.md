@@ -38,7 +38,8 @@ Reference-style:
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Game</h3> | <img src="" width="700"/> |
+| <h3 align="center">Game</h3> | <img src="https://i.imgur.com/FFaaCX5.png" width="700"/> |
+| <h3 align="center">Game</h3> | <img src="https://i.imgur.com/49Wzz0K.png" width="700"/> |
 </details>
 
 <details>
@@ -46,7 +47,7 @@ Reference-style:
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Starting Gameboard/Naruto's Turn</h3> | <img src="https://i.imgur.com/a0CejnY.png" width="700"/> |
+| <h3 align="center">Starting Gameboard</h3> | <img src="https://i.imgur.com/a0CejnY.png" width="700"/> |
 | <h3 align="center">Reds Win</h3> | <img src="https://i.imgur.com/7Bzopsf.png" width="700"/> |
 | <h3 align="center">Blacks Win</h3> | <img src="https://i.imgur.com/sPCFb2N.png" width="700"/> |
 
