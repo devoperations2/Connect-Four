@@ -1,103 +1,106 @@
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
 
 html {
-    background-image: url("https://cdn.onebauer.media/one/empire-tmdb/films/7453/images/lALaxxUVJoZMeRcW3HfvG7QoDua.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill");
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    min-height: 100%;
-    
+  background-image: url("https://cdn.onebauer.media/one/empire-tmdb/films/7453/images/lALaxxUVJoZMeRcW3HfvG7QoDua.jpg?format=jpg&quality=80&width=960&height=540&ratio=16-9&resize=aspectfill");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  min-height: 100%;
+
 }
 
 h1 {
-text-align: center;
-font-family: 'BioRhyme Expanded', serif;
-box-shadow: #0077ea;
-letter-spacing: 5px;
-border-radius: 40%;
-font-size: 75px;
-color: purple;
--webkit-text-fill-color: blue;
--webkit-text-stroke-width: 4px;
--webkit-text-stroke-color: white;
-background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000); 
+  text-align: center;
+  font-family: 'BioRhyme Expanded', serif;
+  box-shadow: #0077ea;
+  letter-spacing: 5px;
+  border-radius: 40%;
+  font-size: 75px;
+  color: purple;
+  -webkit-text-fill-color: blue;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: white;
+  background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
 
 }
+
 h2 {
   font-size: 100px;
   background-color: #ebf8e1;
 }
+
 body {
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 #gameBoard {
-    display: grid;
-    margin: 0 auto;
-    justify-content: center;
-    width:  750px;
-    height: 800px;
-    grid-template-columns: repeat(7, 100px);
-    grid-template-rows: repeat(6, 100px);
-    background-color: rgb(251, 255, 0);
-    border: 5px solid black;
-    align-content: center;   
-    background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
-    
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  width: 750px;
+  height: 800px;
+  grid-template-columns: repeat(7, 100px);
+  grid-template-rows: repeat(6, 100px);
+  background-color: rgb(251, 255, 0);
+  border: 5px solid black;
+  align-content: center;
+  background: radial-gradient(circle at 100%, #333, #333 50%, #eee 75%, #333 75%);
+
 }
-#gameBoard > div {
-    border-radius: 50%;
-    border:  solid blue;
+
+#gameBoard>div {
+  border-radius: 50%;
+  border: solid blue;
 
 
 }
-#gameBoard > div:hover {
-    background-color: rgb(94, 243, 213);
- 
+
+#gameBoard>div:hover {
+  background-color: rgb(94, 243, 213);
+
 }
+
 button {
-       text-align: center;
-       padding: 10px;
-       font-size: 20px;
-       background-color: pink;
-       font-family: 'BioRhyme Expanded', serif;
-       
-       background-size: cover;
-       contain:content 
-       
-       
-    }
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: pink;
+  font-family: 'BioRhyme Expanded', serif;
 
-    #markers {
-        display: grid;
-        grid-template-columns: repeat(7, 7vmin);
-        gap: 1vmin;
-        margin-top: 1vmin;
-        background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
-        
-      } 
-      
-      #markers > div { 
-        height: 4vmin;
-        border-width: 4vmin;
-        border-style: solid;
-        border-color: rgb(0, 25, 124) transparent transparent;
-        transform: scale(0.7);
-        background-image: url("https://silodrome.com/wp-content/uploads/2013/06/Dont-Panic-.jpg");
-        display: flex;
-      }
-      
-      #markers > div:hover {
-        transform: scale(0.9);
-        transition: transform 150ms ease-in;
-        border-top-color: rgb(0, 72, 255);
+  background-size: cover;
+  contain: content
+}
+
+#markers {
+  display: grid;
+  grid-template-columns: repeat(7, 7vmin);
+  gap: 1vmin;
+  margin-top: 1vmin;
+  background: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
+
+}
+
+#markers>div {
+  height: 4vmin;
+  border-width: 4vmin;
+  border-style: solid;
+  border-color: rgb(0, 25, 124) transparent transparent;
+  transform: scale(0.7);
+  background-image: url("https://silodrome.com/wp-content/uploads/2013/06/Dont-Panic-.jpg");
+  display: flex;
+}
+
+#markers>div:hover {
+  transform: scale(0.9);
+  transition: transform 150ms ease-in;
+  border-top-color: rgb(0, 72, 255);
