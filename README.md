@@ -4,14 +4,16 @@
    <h1> Connect Four</h1>
    <h3><a href="https://devoperations2.github.io/Connect-Four/">Play the Game!</a></h3>
    <h5>Christopher Hayes</h5>                             
-   <a href="[github page]" target="_blank">
-      <img src=""/>
+<!--    <a href="[github page]" target="_blank">
+      <img src=""/> -->
    </a>
    <a href="https://www.linkedin.com/in/christopher-hayes-59057b164/"><img src="https://img.shields.io/badge/LinkedIn-informational?style=flat&logo=LinkedIn"></a>
    </a> 
-   <a href="" target="_blank">
+   
+   
+<!--    <a href="" target="_blank">
       <img src="">
-   </a>
+   </a> -->
 </div>
 
 <h1></h1>
@@ -22,8 +24,8 @@
 
 | Description | Screenshot |
 |------------ | ------------|
-| <h3 align="center">Game Wireframes</h3> | <img src="https://i.imgur.com/FFaaCX5.png" width="700"/> |
-| <h3 align="center">Game pseudocode</h3> | <img src="https://i.imgur.com/49Wzz0K.png" width="700"/> |
+| <h3 align="center">Wireframes</h3> | <img src="https://i.imgur.com/FFaaCX5.png" width="700"/> |
+| <h3 align="center">Pseudocode</h3> | <img src="https://i.imgur.com/49Wzz0K.png" width="700"/> |
 </details>
 
 <details>
@@ -66,10 +68,9 @@
 </details>
 
 ## :fast_forward: Next Steps   
-update diagonal logic 
 
 ### Upcoming Features
-add music
-update CSS   
-- [ ] Mobile-friendly version
 - [ ] Highlight *only* the winning 4+ in a row
+- [ ] Update diagonal logic
+- [ ] Add music   
+- [ ] Make mobile-friendly
